@@ -14,8 +14,6 @@
 
 RecoverKit is a multi-tenant SaaS application that helps e-commerce stores recover revenue from abandoned shopping carts. Stores connect via OAuth, and RecoverKit automatically detects abandoned carts, triggers personalized email/SMS sequences, and tracks recovered revenue — all from a single dashboard.
 
-**Live demo:** [recoverkit.dev](https://recoverkit.dev) · **API docs:** [docs.recoverkit.dev](https://docs.recoverkit.dev)
-
 ---
 
 ## Features
