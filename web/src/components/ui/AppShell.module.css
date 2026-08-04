@@ -1,0 +1,108 @@
+.shell {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 12px;
+  gap: 4px;
+}
+
+.logoWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 8px;
+  margin-bottom: 24px;
+}
+
+.logoMark {
+  width: 28px;
+  height: 28px;
+  background: var(--color-primary);
+  color: white;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.logoText {
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -0.3px;
+}
+
+.nav { display: flex; flex-direction: column; gap: 2px; }
+
+.navItem {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--color-muted);
+  transition: background 0.1s, color 0.1s;
+}
+
+.navItem:hover { background: var(--color-primary-light); color: var(--color-primary); }
+.navItem.active { background: var(--color-primary-light); color: var(--color-primary); font-weight: 500; }
+
+.account {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 8px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.storeBadge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.storeDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-success);
+  flex-shrink: 0;
+}
+
+.userEmail {
+  font-size: 12px;
+  color: var(--color-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.logout {
+  text-align: left;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-muted);
+  font-size: 12px;
+  transition: all 0.1s;
+}
+
+.logout:hover {
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+  background: var(--color-danger-light);
+}
+
+.main { background: var(--color-bg); }

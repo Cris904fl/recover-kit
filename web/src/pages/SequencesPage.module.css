@@ -1,0 +1,62 @@
+.page { padding: 28px 32px; display: flex; flex-direction: column; gap: 20px; max-width: 900px; }
+.header { display: flex; align-items: center; justify-content: space-between; }
+.title { font-size: 20px; font-weight: 600; letter-spacing: -0.4px; }
+.btnCreate {
+  padding: 8px 14px;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.btnCreate:hover { opacity: 0.9; }
+.loading { font-size: 13px; color: var(--color-muted); }
+.list { display: flex; flex-direction: column; gap: 10px; }
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.seqName { font-size: 14px; font-weight: 500; }
+.seqMeta { font-size: 12px; color: var(--color-muted); margin-top: 3px; }
+.cardRight { display: flex; align-items: center; gap: 8px; }
+.toggleLabel { font-size: 12px; color: var(--color-muted); min-width: 44px; }
+.action {
+  padding: 5px 10px;
+  border-radius: 7px;
+  font-size: 12px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-muted);
+  transition: all 0.1s;
+}
+.action:hover { border-color: var(--color-primary); color: var(--color-primary); }
+.action:disabled { opacity: 0.5; cursor: default; }
+.action.danger:hover { border-color: var(--color-danger); color: var(--color-danger); background: var(--color-danger-light); }
+.toggle { position: relative; display: inline-block; width: 36px; height: 20px; }
+.toggle input { opacity: 0; width: 0; height: 0; }
+.toggleTrack {
+  position: absolute;
+  inset: 0;
+  background: #d3d1c7;
+  border-radius: 20px;
+  transition: background 0.2s;
+}
+.toggle input:checked + .toggleTrack { background: var(--color-primary); }
+.toggleTrack::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+.toggle input:checked + .toggleTrack::after { transform: translateX(16px); }
